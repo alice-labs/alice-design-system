@@ -1,52 +1,68 @@
 {
-  "name": "alice-react",
-  "version": "1.0.0",
-  "description": "Alice is tech based company in Bangladesh. Which design system is is implemented here",
-  "main": "dist/alice.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "storybook": "start-storybook -p 9001",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alice-labs/alice-design-system.git"
-  },
-  "keywords": [
-    "react",
-    "shared",
-    "components",
-    "components"
-  ],
-  "author": "Sazzad Sazib",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alice-labs/alice-design-system.git/issues"
-  },
-  "homepage": "https://github.com/alice-labs/alice-design-system.git#readme",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^4.0.0-alpha.20",
-    "@storybook/react": "^4.1.18",
-    "@tulipjs/eslint-config": "^1.1.1",
-    "babel-loader": "^8.0.1",
-    "css-loader": "^1.0.0",
-    "docz": "^1.2.0",
-    "docz-theme-default": "^1.2.0",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
-  },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.2.1"
-  }
+	"name": "alice-react",
+	"version": "1.0.0",
+	"description": "Alice is tech based company in Bangladesh. Which design system is is implemented here",
+	"main": "dist/alice.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production",
+		"storybook": "start-storybook -p 9001",
+		"docz:dev": "docz dev",
+		"docz:build": "docz build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alice-labs/alice-design-system.git"
+	},
+	"keywords": [
+		"react",
+		"shared",
+		"components",
+		"components"
+	],
+	"author": "Sazzad Sazib",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/alice-labs/alice-design-system.git/issues"
+	},
+	"homepage": "https://github.com/alice-labs/alice-design-system.git#readme",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"@babel/preset-react": "^7.0.0",
+		"@storybook/addon-actions": "^4.0.0-alpha.20",
+		"@storybook/react": "^4.1.18",
+		"@tulipjs/eslint-config": "^1.1.1",
+		"babel-loader": "^8.0.1",
+		"css-loader": "^1.0.0",
+		"docz": "^1.2.0",
+		"docz-theme-default": "^1.2.0",
+		"node-sass": "^4.9.3",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"url-loader": "^1.1.2",
+		"webpack": "^4.28.3",
+		"webpack-cli": "^3.2.0",
+		"@commitlint/cli": "^8.1.0",
+		"@commitlint/config-conventional": "^8.1.0",
+		"husky": "^3.0.4",
+		"lint-staged": "^9.2.3"
+	},
+	"dependencies": {
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"styled-components": "^4.2.1"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,json,css,scss,html,md}": [
+			"prettier --write",
+			"git add"
+		]
+	}
 }
