@@ -10,6 +10,11 @@ const config = {
 				{
 					rel: "stylesheet",
 					href: "https://codemirror.net/theme/material.css"
+				},
+				{
+					rel: "shortcut icon",
+					href:
+						"https://raw.githubusercontent.com/alice-labs/alice-design-system/master/public/favicon.ico"
 				}
 			]
 		}
