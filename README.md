@@ -6,7 +6,24 @@
 
 ## Get Started
 
-coming soon
+First Install the Package
+
+```bash
+$ yarn add alice-react
+$ npm install alice-react --save
+```
+
+In your Jsx import the component and use them, For example:
+
+```bash
+import {Button} from 'alice-react'
+
+export default const App = () => <Button intent='primary' size='md'>Hello World</Button>
+```
+
+## API Reference:
+
+Go to [**Our Docs Page**](https://alice-design.netlify.com/) For API Reference
 
 ## Development and Storybook
 
