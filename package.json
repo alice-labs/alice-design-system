@@ -1,6 +1,6 @@
 {
 	"name": "alice-react",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Alice is tech based company in Bangladesh. Which design system is is implemented here",
 	"main": "dist/alice.js",
 	"scripts": {
