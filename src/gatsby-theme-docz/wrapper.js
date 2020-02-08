@@ -10,9 +10,8 @@ const Wrapper = ({ children, doc }) => (
 			<meta charSet="utf-8" />
 			<title>Alice React</title>
 			<link
-				rel="icon"
-				type="image/ico"
-				href="https://getalice.netlify.com/favicon.ico"
+				rel="shortcut icon"
+				href="https://raw.githubusercontent.com/alice-labs/alice-design-system/master/public/favicon.ico"
 			/>
 		</Helmet>
 		{children}
