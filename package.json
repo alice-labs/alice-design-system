@@ -25,7 +25,7 @@
 	"bugs": {
 		"url": "https://github.com/alice-labs/alice-design-system.git/issues"
 	},
-	"homepage": "https://github.com/alice-labs/alice-design-system.git#readme",
+	"homepage": "http://alice-design.netlify.com/",
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
 		"@babel/preset-env": "^7.2.3",
