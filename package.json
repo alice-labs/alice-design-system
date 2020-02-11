@@ -37,8 +37,6 @@
 		"@tulipjs/eslint-config": "^1.1.1",
 		"babel-loader": "^8.0.1",
 		"css-loader": "^1.0.0",
-		"docz": "^1.2.0",
-		"docz-theme-default": "^1.2.0",
 		"husky": "^3.0.4",
 		"lint-staged": "^9.2.3",
 		"node-sass": "^4.9.3",
@@ -62,7 +60,6 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx,json,css,scss,html,md}": [
-			"prettier --write",
 			"git add"
 		]
 	}
