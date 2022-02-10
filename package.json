@@ -41,7 +41,7 @@
 		"docz-theme-default": "^1.2.0",
 		"husky": "^3.0.4",
 		"lint-staged": "^9.2.3",
-		"node-sass": "^4.9.3",
+		"node-sass": "^7.0.0",
 		"sass-loader": "^7.1.0",
 		"style-loader": "^0.23.1",
 		"url-loader": "^1.1.2",
